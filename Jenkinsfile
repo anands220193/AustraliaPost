@@ -8,5 +8,12 @@ pipeline {
       }
     }
 
+    stage('configure') {
+      steps {
+        sh '''node -v
+npm install'''
+      }
+    }
+
   }
 }
