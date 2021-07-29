@@ -9,6 +9,12 @@ pipeline {
 
     stage('configure') {
       steps {
+        bat 'npm install'
+      }
+    }
+
+    stage('Execute') {
+      steps {
         bat 'npx cypress run'
       }
     }
