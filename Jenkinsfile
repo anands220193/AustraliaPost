@@ -9,7 +9,7 @@ pipeline {
 
     stage('configure') {
       steps {
-        bat 'npm cypress -verify'
+        bat 'npx cypress run'
       }
     }
 
