@@ -9,7 +9,7 @@ pipeline {
 
     stage('configure') {
       steps {
-        bat 'npm install'
+        bat 'npm update'
       }
     }
 
