@@ -10,8 +10,7 @@ pipeline {
 
     stage('configure') {
       steps {
-        sh '''node -v
-npm install'''
+        bat 'npm install'
       }
     }
 
