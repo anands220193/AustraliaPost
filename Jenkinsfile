@@ -7,5 +7,17 @@ pipeline {
       }
     }
 
+    stage('Config') {
+      steps {
+        bat 'npm install'
+      }
+    }
+
+    stage('Execute') {
+      steps {
+        bat 'npx cypress run'
+      }
+    }
+
   }
 }
